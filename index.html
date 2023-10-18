@@ -89,10 +89,7 @@
       display: inline-block;
     }
 
-    .rate:active {
-      background-color: red;
-    }
-
+    
     .rate:hover {
       background-color: #fc7613;
       transition: all smooth;
@@ -168,6 +165,14 @@
       font-size: 26px;
       font-weight: 700;
       margin-bottom: 14px;
+    }
+
+    @media (max-width:768px){
+      .rate:hover {
+        background-color: #fc7613;
+        transition: all smooth;
+      }
+   
     }
   </style>
 
