@@ -4,6 +4,7 @@ let check;
 let submit = document.querySelector('button')
 let result = document.getElementById('result')
 let yourRate;
+let thanks = document.querySelector('.thanks')
 rates.forEach((el) => {
     el.addEventListener('click', (event) => {
         event.target.classList.toggle('active');
@@ -20,6 +21,7 @@ submit.addEventListener('click', () => {
     if (check.length > 0) {
         main.classList.add('submit')
         result.textContent = `You selected ${yourRate} out of 5`
+        thanks.style . display="inline";
     }
     else alert('please Rate-Us')
 })
