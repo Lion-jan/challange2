@@ -22,6 +22,15 @@
       font-family: 'inter', sans-serif;
     }
 
+    .challange2{
+      width: 100vw;
+      height: 100vh ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -36,14 +45,16 @@
     }
 
     .rateUs {
-      width: 415px;
+      width: 400px;
       height: 415px;
       border-radius: 30px;
       background: linear-gradient(180deg, #222933 0%, #171E28 100%);
       padding: 30px;
       position: absolute;
-      top: 200px;
-      left: 600px;
+      
+      top: 255px;
+      left: 760px;
+      z-index: 999;
       color: #fff;
 
     }
@@ -134,14 +145,14 @@
 
 
     .thanks {
-      width: 415px;
+      width: 400px;
       height: 415px;
       border-radius: 30px;
       font-family: Inter;
       background: linear-gradient(180deg, #222933 0%, #171E28 100%);
       padding: 50px 40px;
-      margin: 200px 600px;
       text-align: center;
+      
     }
 
     #result {
@@ -168,33 +179,35 @@
 
 <body>
 
-  <div class="rateUs">
-    <div class="image-star">
-      <img src="./images/icon-star.svg" alt="">
+  <div class="challange2">
+    <div class="rateUs">
+      <div class="image-star">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support
+        request. All feedback is appreciated to help us
+        improve our offering!</p>
+  
+      <div class="ball">
+        <div class="rate">1</div>
+        <div class="rate">2</div>
+        <div class="rate">3</div>
+        <div class="rate">4</div>
+        <div class="rate">5</div>
+      </div>
+  
+      <button>SUBMIT</button>
     </div>
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support
-      request. All feedback is appreciated to help us
-      improve our offering!</p>
-
-    <div class="ball">
-      <div class="rate">1</div>
-      <div class="rate">2</div>
-      <div class="rate">3</div>
-      <div class="rate">4</div>
-      <div class="rate">5</div>
+  
+    <div class="thanks">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <p id="result">skskkskfsjfkj</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating.If you ever need more support, don’t hesitate toget in touch!
+      </p>
+  
     </div>
-
-    <button>SUBMIT</button>
-  </div>
-
-  <div class="thanks">
-    <img src="./images/illustration-thank-you.svg" alt="">
-    <p id="result">skskkskfsjfkj</p>
-    <h2>Thank you!</h2>
-    <p>We appreciate you taking the time to give a rating.If you ever need more support, don’t hesitate toget in touch!
-    </p>
-
   </div>
 
 </body>
